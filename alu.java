@@ -13,7 +13,7 @@ public class alu{
 
     /* This method prints out one instance of the ALU function, showing one possible combination of input values and their corresponding output  */
     /* The input values of this function are the same as the above method for the ALU */
-    /* This returns both the set of input values and their output as computed by the ALU method written above */
+    /* This returns both the set of input values and their output as computed by the ALU method w */ritten above */
     public static void print_call(int F0, int F1, int INVA, int ENA, int ENB, int carryin, int a, int b){
 	System.out.print("alu("+F0+", "+F1+", "+INVA+", "+ENA+", "+ENB+", "+carryin+", "+a+", "+b+") --> ");
 	System.out.println(myalu(F0, F1, INVA, ENA, ENB, carryin, a, b));
@@ -32,7 +32,7 @@ public class alu{
 	print_call(F0, F1, INVA, ENA, ENB, 1, 1, 1);
     }
 
-    /* In main, the series of for loops run through various possible combinations of input values  */
+    /* In main, the series of for loops run through various possible combinations of input values 
     /* The for loops utilize the print_section method to output all 256 possible combinations of input values for the ALU, and their corresponding outputs  */
     public static void main(String[] args){
 	for(int F0 = 0; F0 < 2; F0++){
